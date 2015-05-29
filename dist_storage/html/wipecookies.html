@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wipe STOR2RRD cookies</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script type="text/javascript" src="jquery/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.cookie.js"></script>
+  <script type="text/javascript">
+		$(document).ready(function() { 
+			var conf = confirm("Are you sure you want to wipe all STOR2RRD cookies for this host.domain/path?");
+			if(conf == true) {
+				for (var it in $.cookie()) $.removeCookie(it);
+					$("h2").text("All STOR2RRD cookies wiped!");
+				} else {
+					$("h2").text("STOR2RRD cookies remain untouched!");
+				}
+			setTimeout(function (){
+				window.location.href = "index.html";
+			}, 3000);
+		});
+  </script>
+</head>
+
+<body>
+	<h2>&nbsp;</h2>
+</body>
+</html>

@@ -1,0 +1,6 @@
+#sum <file>|awk '{print \1}':<file>
+41158:Copyright.txt
+52980:README
+25845:install.sh
+55065:stor2rrd.tar.Z
+13882:update.sh

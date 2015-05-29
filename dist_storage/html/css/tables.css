@@ -1,0 +1,520 @@
+table {
+    text-align:left;
+}
+
+.tabadvisor{
+	background:#fff;
+	border-collapse:collapse;
+	text-align:left;
+	margin:10px 20px;
+	border:1px solid #ccc;
+}
+
+.tabadvisor th{
+	font-size:.8em;
+	font-weight:bold;
+	color:#039;
+	border-bottom: 1px solid #6678b1;
+	padding:4px 8px;
+	vertical-align: bottom;
+}
+
+.tabadvisor td {
+	font-size:0.7em;
+	border-bottom:1px dotted #aaa;
+	color:#666;
+	padding:3px 8px;
+}
+
+.tabadvisor tbody tr:hover td{
+	color:#000;
+}
+
+.tabadvisor a {
+	color:#55c;
+	text-decoration: none;
+}
+
+.tabadvisor tbody tr:hover a {
+	color:#006;
+}
+
+.tabconfig {
+	background:#fff;
+    border-collapse: collapse;
+	border:1px solid #ccc;
+}
+.tabconfig td{
+	font-size:0.7em;
+	color:#666;
+	border-bottom: 1px dotted #aaa;
+	padding:4px 10px;
+}
+.tabconfig th{
+	font-size:.8em;
+	font-weight:bold;
+	color:#039;
+	border-bottom:2px solid #6678b1;
+	padding:4px 10px;
+	vertical-align: bottom;
+}
+.tabconfig a {
+	display: block;
+	text-decoration: none;
+}
+
+.tabconfig td a {
+	color:#666;
+	padding:4px 10px;
+}
+
+.tabconfig tr:hover td {
+	color:#111;
+}
+
+.tabtop10{
+	background:#fff;
+	border-collapse:collapse;
+	text-align:left;
+	margin:10px 20px;
+	border:1px solid #ccc;
+}
+
+.tabtop10 tr:first-child td{
+	font-size:.8em;
+	font-weight:bold;
+	color:#039;
+	border-bottom:2px solid #6678b1;
+	padding:6px 8px;
+}
+
+.tabtop10 td {
+	font-size:0.7em;
+	border-bottom:1px dotted #aaa;
+	color:#666;
+	padding:6px 8px;
+}
+
+.tabtop10 tbody tr:hover td{
+	color:#000;
+}
+
+.tabtop10 a {
+	color:#55c;
+	text-decoration: none;
+}
+
+.tabtop10 tbody tr:hover a {
+	color:#006;
+}
+.tabtop10 tr + tr td:first-child {
+    padding-right: 6em;
+}
+
+.tabsyscfg {
+	background:#fff;
+    border-collapse: separate;
+	border:0;
+}
+.tabsyscfg td{
+	font-size:0.7em;
+	border-spacing: 2px;
+	padding: 0;
+}
+.tabsyscfg tr:first-child td{
+	font-size:.8em;
+	font-weight:normal;
+	color:#039;
+	border:1px dotted #aaa;
+	border-bottom:2px solid #6678b1;
+	padding:4px 6px;
+}
+.tabsyscfg a {
+	display: block;
+	text-decoration: none;
+}
+
+.tabsyscfg td a {
+	font-size:0.7em;
+	color:#666;
+	padding:4px 10px;
+}
+.tabsyscfg tr:first-child td a{
+    font-size:.8em;
+}
+
+.tabsyscfg a:hover {
+	color:#006;
+}
+
+.lparsearch{
+	background:#fff;
+	border-collapse:collapse;
+	text-align:left;
+	margin:10px 20px;
+	border:1px solid #ccc;
+}
+
+.lparsearch th {
+	font-size:.8em;
+	font-weight:bold;
+	color:#039;
+	border-bottom:2px solid #6678b1;
+	padding:6px 8px;
+}
+
+.lparsearch th span {
+	font-size:.7em;
+}
+
+.lparsearch td {
+	font-size:0.7em;
+	border-bottom:1px dotted #aaa;
+	color:#666;
+	padding:6px 8px;
+}
+
+.lparsearch tbody tr:hover td{
+	color:#000;
+}
+
+.lparsearch a {
+	color:#55c;
+	text-decoration: none;
+}
+
+.lparsearch tbody tr:hover a {
+	color:#006;
+}
+#pooltree, #porttree, #ranktree, #voltree {
+	max-height: 28em;
+	width: 140px;
+	overflow-y: auto;
+	overflow-x: auto;
+	padding-right: 18px;
+}
+#voltree {
+	width: 240px;
+}
+#histreptree {
+	max-height: 30em;
+	width: 240px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 18px;
+}
+fieldset.estimator div ul {
+	outline: none;
+}
+/*
+#lpartree ul {
+	outline: none;
+}
+#pooltree ul {
+	outline: none;
+}
+#porttree ul {
+	outline: none;
+}
+#ranktree ul {
+	outline: none;
+}
+#voltree ul {
+	outline: none;
+}
+*/
+#drtree {
+	height: 30em;
+	overflow-y: auto;
+	overflow-x: hidden;
+} 
+#drtree table {
+	outline: none;
+}
+
+table.tablesorter {
+/*	font-family:arial; */
+/*	background-color: #CDCDCD; */
+	margin:10px 0pt 15px;
+/*	font-size: 8pt; */
+/*	width: 100%; */
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+/*	background-color: #e6EEEE;
+	border: 1px solid #FFF; */
+/*	font-size: 8pt; */
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom 7px;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+/*	color: #3D3D3D; */
+	padding: 4px;
+/*	background-color: #FFF; */
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #E0ECFF;
+}
+
+/*configuration summary*/
+.tabcfgsum {
+  background:#fff;
+  border-collapse: collapse;
+  border:1px solid #ccc;
+  width: 100%;
+}
+.tabcfgsum td{
+  font-size:0.7em; 
+  color:#666;
+  border-bottom: 1px dotted #aaa;
+  padding:4px;
+}
+.tabcfgsum th{
+  font-size:0.8em;
+  font-weight:bold;
+  color:#039;
+  border-bottom:2px solid #6678b1;
+  vertical-align: bottom;
+}
+.tabcfgsum a {
+  display: block;
+  text-decoration: none;
+}
+.tabcfgsum td a {
+  color:#333;
+}
+
+.tabcfgsumext {
+  background:#fff;
+  border-spacing: 6px;
+  border:1px solid #ccc;
+}
+.tabcfgsumext td{
+  color:#333;
+  vertical-align: top;
+}
+.tabcfgsumext th{
+  font-weight:bold;
+  color:#039;
+  border-bottom:2px solid #6678b1;
+  vertical-align: bottom;
+}
+.tabcfgsumext a {
+  color:#039;
+  display: block;
+  text-decoration: none;
+}
+
+table.tablesortercfgsum {
+  margin:0px;
+}
+
+td.columnalignleft {
+  white-space:nowrap;
+  text-align:left;  
+}
+th.columnalignleft{
+  white-space:nowrap;
+  text-align:left;
+}
+
+td.columnalignmiddle {
+  white-space:nowrap;
+  text-align:right;
+}
+th.columnalignmiddle {
+  white-space:nowrap;
+  text-align:right;
+}
+
+td.columnalignright {
+  white-space:nowrap;
+  text-align:right;
+  width: 28%;
+}
+th.columnalignright {
+  white-space:nowrap;
+  text-align:right;
+  width: 28%;
+}
+
+/*end configuration summary*/
+
+/* Legend table */
+
+div.legend {
+	padding-right: 6px;
+	float: right;
+/*	margin-top: -12px; */
+	margin-bottom: 12px;
+	position: relative;
+/*	max-height: 120px; */
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+div.updated {
+	font-size: 6px;
+	font-size: 0.6rem;
+	float: right;
+	width: 448px;
+	margin-top: 4px;
+}
+
+table.tablegend {
+	width: 436px;
+	max-width: 488px;
+	/* background:#fff; */
+	border:0px;
+	margin-top: 0;
+	margin-right: 6px;
+	border-spacing: 0;
+}
+table.tablegend tbody td{
+	font-size:0.6em;
+	color:#333;
+	border-top: 1px dotted #ccc;
+	padding:3px 4px 2px 4px;
+	text-decoration: none;
+	line-height: 0.6em;
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 280px; 
+}
+table.tablegend tbody tr:first-child td{
+	border-top: 0;
+}
+table.tablegend th{
+	font-size:.6em;
+	font-weight:normal;
+	color: #000;
+	border-bottom:1px solid #aaa;
+	vertical-align: bottom;
+	text-align: right;
+}
+table.tablegend a {
+	text-decoration: none;
+}
+
+table.tablegend tr:hover td {
+	color:#000;
+}
+
+table.tablegend td.clickabletd {
+	text-align: left;
+	height: 100%;
+}
+table.tablegend td.clickabletd a {
+	display: inline-block;
+	margin: -1em;
+    padding: 1em;
+	width: 100%;
+	height: 100%;
+}
+table.tablegend td.clickabletd:hover {
+	background: rgb(185, 222, 255);
+}
+table.tablegend td a {
+	color:#000;
+}
+
+table.tablegend thead tr .header {
+	background-position: right -4px bottom 3px;
+}
+table.tablegend thead tr th {
+	padding: 2px 8px 2px 4px;
+}
+
+table.tablegend tbody td.legsq, table.tablegend tfoot td.legsq{
+	padding: 0;
+	width: 20px;
+	padding: 1px;
+	width: 8px;
+}
+
+/*
+table.tablegend td.legsq + td, table.tablegend thead tr th:first-child + th, table.tablegend thead tr th:first-child, table.tablegend td:first-child {
+	text-align: left;
+}
+*/
+
+div.innersq {
+	height: 8px;
+	width: 8px;
+    border: 1px solid #444;
+}
+th.popup {
+  background-image: url(images/popdetail.gif);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+}
+table.tablegend tfoot td {
+	font-size:.6em;
+	text-align: right;
+	padding: 3px 4px 2px 4px;
+	line-height: 0.6em;
+}
+table.tablegend tfoot tr:first-child td {
+	border-top:1px solid #aaa;
+}
+a {
+	text-decoration: none;
+}
+
+#acltable tr.highlight {
+	background: #E0ECFF;
+	color: #111;
+}
+#acltable tr.highlight td {
+	color: black;
+}
+table.cgcfg {
+	float: left;
+	margin-right: 10px;
+}
+table.cgcfg td {
+	border: 1px solid lightgrey;
+	vertical-align: top;
+	color: black;
+}
+table.cgcfg th {
+	vertical-align: middle;
+	border: 1px solid lightgrey;
+	font-size:.7em;
+}
+table.cgcfg label {
+	vertical-align: middle;
+	font-size:.6em;
+	color: #333;
+}
+table.cgcfg input {
+	vertical-align: middle;
+}
+table.cgcfg button {
+	font-size:.9em;
+}
+.cggrpnames {
+	width: 140px;
+}
+
+table.tablegend td.toleft, table.tablegend th.toleft {
+  white-space:nowrap;
+  text-align: left;
+}

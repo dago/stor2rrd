@@ -1,0 +1,57 @@
+@import url("style.css");
+#header {
+	border-bottom: 3px solid #888;
+	background:#454545;
+}
+#sidebar {
+	background-color: #343333;
+	font-family: Arial, 'DejaVu Sans', sans-serif;
+	font-size: 0.8em;
+}
+#sidebar span.fancytree-title {
+	color: #cecece;
+} 
+#sidebar span.fancytree-title:hover {
+	color: white;
+	background: #555;
+}
+#sidebar span.fancytree-active span.fancytree-title {
+	outline: 1px solid #227DA4;
+	background: #227DA4;
+	color: white;
+}
+#econtent {
+	border-left : 2px solid #B1B1B1;
+}
+#footer {
+	border-top : 2px solid #B1B1B1;
+	background:#464445;
+}
+
+.ui-tabs .ui-tabs-nav{margin:0;padding:0 .2em 0 0; position: fixed; left: 250px; top: 39px; z-index: 1; zoom: 1}
+.ui-tabs .ui-tabs-nav li{height: 23px}
+.ui-tabs .ui-tabs-nav li a{color: #aaa;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{padding-bottom:0px; border: 2px solid #ddd; background: #b1b1b1;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,.ui-tabs .ui-tabs-nav li.ui-state-disabled a,.ui-tabs .ui-tabs-nav li.ui-tabs-loading a{color: black}
+
+.ui-tabs-nav .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{
+  border:1px solid #5e5e5e;
+  color:#555
+  }
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{
+  border:1px solid #5e5e5e;
+  }
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{
+  color:black;
+  }
+
+.ui-tabs-nav .ui-state-default {
+	border: 1px solid #777;
+	background: #444;
+	font-weight: bold;
+	color: #888;
+}
+.ui-tabs-nav .ui-state-default a:hover {
+	background: #ddd;
+	color: black;
+}

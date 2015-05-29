@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>STOR2RRD</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="css/fancytree/skin-xp/ui.fancytree.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="jquery/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery-ui-timepicker-addon.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.imgareaselect.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.cookie.js"></script>
+  <script type="text/javascript" src="jquery/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="jquery/jquery.fancytree-all.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.lazy.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.history.js"></script>
+  <script type="text/javascript" src="jquery/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="jquery/mwheelIntent.js"></script>
+  <script type="text/javascript" src="jquery/jquery.jscrollpane.min.js"></script>
+  <script type="text/javascript" src="jquery/md5.min.js"></script>
+  <script type="text/javascript" src="jquery/main.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <a href="http://www.stor2rrd.com/" target="_blank"><img src="css/images/logo-stor2rrd.png" alt="STOR2RRD HOME" style="float: left; margin-top: 13px; margin-left:12px; border: 0"></a>
+  <div id="subheader">
+	<div id="nmonsw" class="ui-button">
+		<input type="radio" name="nmon" id="nmr1" value="0" style="display: none" checked="checked"><label for="nmr1" title="Show tabs with frontend data"><span>Frontend</span></label>
+		<input type="radio" name="nmon" id="nmr2" value="1" style="display: none"><label for="nmr2" title="Show tabs with frontend data"><span>Backend</span></label>
+	</div>
+    <form id="savecontent" action="/stor2rrd-cgi/genjson.sh" method="post" style="display: none">
+            <input type="hidden" name="jsontype" value="dump">
+            <input type="hidden" name="tosave" id="tosave">
+      <input type="submit" title="Save HTML code of main section to a file" value="DEBUG: Dump"><input id="wipecookies" type="button" title="Wipe all cookies from this website (host.domain/path)" value="Wipe Cookies"><input id="envdump" type="button" title="Dump ENV values" value="ENV dump">
+    </form>
+  </div>
+  </div>
+
+  <div id="toolbar" class="ui-widget-header ui-corner-all">
+    <button id="collapseall">Collapse All</button><button id="expandall">Expand All</button><input type="text" placeholder='Filter...' id="menu-filter"><button id="filter">Apply Filter</button><button id="clrsrch">Clear Filter</button>
+  </div>
+  <div id="sidebar"> 
+  <div id="side-menu">
+  </div>
+  </div>
+
+  <div id="econtent">
+    <div id="conttitle"><div id="datasrc" title="" class="none"></div><h2 id="title"></h2></div>
+    <div id="content"></div>
+  </div>
+  <div id="footer">
+  <p>&copy; 2014 <a href="http://www.xorux.com" target="_blank">XORUX</a></p>
+  </div>
+  <div id="beta-notice" title="Beta version notice">
+  </div>
+  <div id="data-src-info" title="Data source infobox">
+    <p>Data sources:</p>
+    <ul>
+      <li style="background-image: url(css/images/28bluesrc.png)">Frontend data</li>
+      <li style="background-image: url(css/images/28orangesrc.png)">Backend data</li>
+    </ul>
+    <p>Read more about <a href="http://www.stor2rrd.com/support_matrix.htm?1.0" target="_blank">Support matrix</a>.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+# This file is for Apache 1.3.x and Apache 2.0.x
+# /etc/opt/freeware/apache/httpd.conf
+#
+# Add this to your Apache configuration, it makes
+# the LPAR2RRD webpages and cgi-scripts available in the
+# "" and "/stor2rrd-cgi" URLs.
+
+
+# NB: The "Alias" line below must NOT be used if you have
+#     the LPAR2RRD webfiles as the root URL. In that case,
+#     you should instead set this:
+#
+#          DocumentRoot /home/stor2rrd/stor2rrd/www/
+
+Alias /stor2rrd/  "/home/stor2rrd/stor2rrd/www/"
+<Directory "/home/stor2rrd/stor2rrd/www/">
+    Options Indexes FollowSymLinks Includes MultiViews
+    Order allow,deny
+    Allow from all
+</Directory>
+
+# CGI-BIN
+ScriptAlias /stor2rrd-cgi/ "/home/stor2rrd/stor2rrd/stor2rrd-cgi/"
+<Directory "/home/stor2rrd/stor2rrd/stor2rrd-cgi">
+    AllowOverride None
+    Options ExecCGI Includes
+    Order allow,deny
+    Allow from all
+</Directory>
+
+
+
+=================================================================
+This is slightly changed cfg for Apache 2.4
+=================================================================
+1. assure this is allowed
+    AddHandler cgi-script .sh
+2. verify mod_cgid is loaded
+3. this is commented by default often these days, uncomment it
+   LoadModule cgid_module libexec/mod_cgid.so 
+
+4. LPAR2RRD directives:
+# NB: The "Alias" line below must NOT be used if you have
+#     the LPAR2RRD webfiles as the root URL. In that case,
+#     you should instead set this:
+#
+#          DocumentRoot /home/stor2rrd/stor2rrd/www/
+Alias /stor2rrd/  "/home/stor2rrd/stor2rrd/www/"
+<Directory "/home/stor2rrd/stor2rrd/www/">
+        Options Indexes FollowSymLinks Includes MultiViews
+#    Order allow,deny
+#    Allow from all
+    Require all granted
+</Directory>
+
+# CGI-BIN
+ScriptAlias /stor2rrd-cgi/ "/home/stor2rrd/stor2rrd/stor2rrd-cgi/"
+<Directory "/home/stor2rrd/stor2rrd/stor2rrd-cgi">
+    AllowOverride None
+        SetHandler cgi-script
+    Options ExecCGI Includes FollowSymLinks
+#    Order allow,deny
+#    Allow from all
+    Require all granted
+</Directory>

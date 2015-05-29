@@ -1,0 +1,6 @@
+For new installation run : sh ./install.sh
+For update run : sh ./update.sh
+
+For more details refer to :
+http://www.stor2rrd.com/install.htm
+http://www.stor2rrd.com/upgrade.htm

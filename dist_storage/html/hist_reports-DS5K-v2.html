@@ -1,0 +1,92 @@
+<center>
+	<div style="font-size: 0.8em">
+		<label for="from">From</label>
+		<input type="text" id="fromTime" size="14">
+		<label for="to">to</label>
+		<input type="text" id="toTime" size="14">
+	</div>
+    <form method="post" action="/stor2rrd-cgi/stor2rrd-cgi.sh" id="histrep">
+		<input type="hidden" name="start-hour" id="start-hour" size="3" value="12">
+		<input type="hidden" name="start-day" id="start-day" size="3">
+		<input type="hidden" name="start-mon" id="start-mon" size="3">
+		<input type="hidden" name="start-yr" id="start-yr" size="3">
+		<input type="hidden" name="end-hour" id="end-hour" size="3" value="12">
+		<input type="hidden" name="end-day" id="end-day" size="3">
+		<input type="hidden" name="end-mon" id="end-mon" size="3">
+		<input type="hidden" name="end-yr" id="end-yr" size="3">
+    <table border="0" cellspacing="5">
+        <tbody>
+        <tr>
+            <td colspan="2">
+            <table align="center">
+                <tbody>
+                <tr>
+                    <td style="font-size: 0.8em">Graph resolution <input type="text" name="HEIGHT" value="150" size="3"> x <input type="text" name="WIDTH" value="900" size="3"></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+			<input type="hidden" name="storage" id="storage" size="3" value="">
+            </td>
+        </tr>
+
+        <tr>
+		<td colspan="2" align="center">
+			<fieldset style="width: 80%;">
+			<legend>Select data output <label><input type='checkbox' class="allcheck" name="outdata" value='outdata'>all&nbsp;</label></legend>
+		  	<table class="seloutput"><tr>
+			<td valign="top">
+				<p class="selhead">IO</p>
+				<label><input type='checkbox' name='output' value='io_rate'>total</label><br />
+			</td>
+			<td valign="top">
+				<p class="selhead">DATA</p>
+				<label><input type='checkbox' name='output' value='data_rate'>total</label><br />
+			</td>
+			<td valign="top">
+				<p class="selhead">RESP TIME</p>
+				<label><input type='checkbox' name='output' value='resp_t'>total</label><br />
+			</td>
+			<td valign="top">
+				<p class="selhead">CACHE</p>
+				<label><input type='checkbox' name='output' value='r_cache_hit'>read hit</label><br />
+				<label><input type='checkbox' name='output' value='w_cache_hit'>write hit</label><br />
+			</td>
+			</tr></table>
+			</fieldset>
+			</td>
+			<tr>
+            <td colspan="2" align="center">
+
+            <table border="0">
+                <tbody>
+				<tr valign="top">
+					<div>
+					<td>
+						<div style="float: left">
+							<fieldset class="estimator">
+								<legend>Pool <label><input type='checkbox' class="allcheck" name='pool' value='vol'>all</label></legend>
+								<div id="pooltree" name="selPool"></div>
+							</fieldset>
+						</div>
+					</td>
+					<td>
+						<div style="float: left">
+							<fieldset class="estimator">
+								<legend>Volume <label><input type='checkbox' class="allcheck" name='vol' value='vol'>all</label></legend>
+								<input type="text" id="srvlparfilter" placeholder="Filter...">
+								<div id="voltree" name="selVolume"></div>
+							</fieldset>
+						</div>
+					</td>
+				</div>
+				</tr>
+               </tbody>
+            </table>
+            <input type="submit" style="font-weight: bold" name="Report" value="Generate Report" alt="Generate Report">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </form>
+</center>

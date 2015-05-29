@@ -1,0 +1,64 @@
+<div style="text-align: center">
+	<p id="emptydash" style="display:none">Please select some graphs you want to see here! (or <a id="filldashlink" href="#">use predefined set</a>)</p>
+	<p id="nocookies" style="color: red; display: none">Your browser doesn't accept cookies. Cookies are required to use DashBoard. You can either enable cookies or use an <a href="index_old.html" onclick="location.href='index_old.html'">old GUI</a>.</p>
+	<div id="tabs"> 
+		<ul>
+			<li><a href="#tabs-1">Pool</a></li>
+			<li><a href="#tabs-2">Rank/mDisk</a></li>
+			<li><a href="#tabs-3">Volume</a></li>
+			<li><a href="#tabs-4">Drive</a></li>
+			<li><a href="#tabs-5">Port</a></li>
+			<li><a href="#tabs-6">CPU</a></li>
+			<li><a href="#tabs-7">Host</a></li>
+		</ul>
+		<div id="tabs-1">
+			<ul id="dashboard-pool" class="dashlist">
+			<p>Pool</p>
+			</ul>
+			<br style="clear:both">
+		</div>
+		<div id="tabs-2">
+			<ul id="dashboard-rank" class="dashlist">
+			<p>Rank/mDisk</p>
+			</ul>
+			<br style="clear:both">
+		</div>
+		<div id="tabs-3">
+			<ul id="dashboard-volume" class="dashlist">
+			<p>Volume</p>
+			</ul>
+			<br style="clear:both">
+		</div>
+		<div id="tabs-4">
+			<ul id="dashboard-drive" class="dashlist">
+			<p>Drive</p>
+			</ul>
+			<br style="clear:both">
+		</div>
+		<div id="tabs-5">
+			<ul id="dashboard-port" class="dashlist">
+			<p>Port</p>
+			</ul>
+			<br style="clear:both">
+		</div>
+		<div id="tabs-6">
+			<ul id="dashboard-cpu" class="dashlist">
+			<p>CPU</p>
+			</ul>
+			<br style="clear:both">
+		</div>
+		<div id="tabs-7">
+			<ul id="dashboard-host" class="dashlist">
+			<p>Host</p>
+			</ul>
+		</div>
+	</div>
+	<p><br style="clear:both"></p>
+	<div id="dashfooter" style="padding-top: 1em; border-top: 1px dotted grey; clear: both">
+		<button id="dbstyle" title="Switch Dashboard style">Switch to Flat Style</button>
+		<button id="clrcookies" title="Remove all DashBoard items (destructive!)">Clear dashboard</button>
+		<button id="filldash" title="Append predefined items: Custom groups, Totals for all servers and LPARs aggregates">Add predefined</button>
+		<!--button id="oldgui" title="For those who don't like or cannot use all these new bells & whistles..." onclick="location.href='index_old.html'">Old GUI</button-->
+		<input type="image" id="stor2rrd" style="width: 140px; float: right" title="Visit LPAR2RRD (IBM Power performance monitoring)" onclick="window.open('http://www.lpar2rrd.com', '_blank')" src="css/images/lpar2rrd-logo-140.png">
+	</div>
+</div>

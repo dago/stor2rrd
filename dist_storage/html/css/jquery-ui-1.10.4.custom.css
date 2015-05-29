@@ -1,0 +1,100 @@
+@import url("jquery-ui.css");
+
+.ui-helper-clearfix:before,.ui-helper-clearfix:after{content:"";display:table;border-collapse:collapse}
+.ui-helper-clearfix:after{clear:both}
+.ui-helper-clearfix{min-height:0}
+.ui-helper-zfix{width:100%;height:100%;top:0;left:0;position:absolute;opacity:0;filter:Alpha(Opacity=0)}
+
+.ui-widget-header ul {
+	  height:28px;   
+  }
+.ui-tabs{position:relative;}
+.ui-tabs-nav {
+	font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+	font-weight: bold; 
+	font-size: 0.8em;
+	height: 22px;
+}
+a.ui-tabs-anchor:focus {
+	outline: none;
+}
+.ui-tabs-nav a{color: #2999C5;}
+.ui-tabs .ui-tabs-nav{margin:0;padding:0 .2em 0 0; position: fixed; left: 250px; top: 29px; z-index: 1; zoom: 1}
+.ui-tabs .ui-tabs-nav li{list-style:none;float:left;position:relative;top:0;margin:1px 2px 0 0;border-bottom-width:0;padding:0;white-space:nowrap; height: 22px}
+.ui-tabs .ui-tabs-nav li a{float:left;padding:5px 8px;text-decoration:none}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{margin-bottom:-2px;padding-bottom:2px; border: 1px solid #3879D9; border-bottom: 0; background: #3879D9;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,.ui-tabs .ui-tabs-nav li.ui-state-disabled a,.ui-tabs .ui-tabs-nav li.ui-tabs-loading a{cursor:text}
+.ui-tabs .ui-tabs-nav li a,.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a{cursor:pointer}
+.ui-tabs .ui-tabs-panel{display:block;border-width:0;padding:0.5em 1.4em;background:none}
+
+.ui-tabs-panel {
+	margin-top: -12px;
+}
+
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{
+  border:1px solid #d3d3d3;
+  color:#555
+  }
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{
+  border:1px solid #999;
+  background:white;
+  color:#212121
+  }
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{
+  border:1px solid #aaa;
+  background:#F7FCF8;
+  color:#444
+  }
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{
+  color:white;
+  text-decoration:none
+  }
+.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{
+  border:1px solid #fcefa1;
+  background:#fbf9ee;
+  color:#363636
+  }
+.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{
+  border:1px solid #cd0a0a;
+  background:#fef1ec;
+  color:#cd0a0a
+  }
+
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+	width: 2.2em;
+}
+button.ui-button-text-only .ui-button-text{
+	padding: 0 0.4em;
+	height: 1.3em;
+}
+/* button elements seem to need a little more width */
+button.ui-button-icon-only {
+	width: 1.6em;
+	height: 1.5em;
+}
+.ui-button-icons-only {
+	width: 3.4em;
+}
+button.ui-button-icons-only {
+	width: 3.7em;
+}
+
+.ui-state-default span.ui-button-text {
+	color: #3879D9;;
+}
+
+.ui-state-active span.ui-button-text {
+	background: #3879D9;
+	color: white;
+}
+.ui-menu {
+	font-size: 0.7em;
+	background: white;
+	cursor: pointer;
+}
+ul.ui-menu li.ui-menu-item.ui-state-focus {
+	border: 0;
+	background: #3879D9;
+	color: white;
+}
